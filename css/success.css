@@ -1,0 +1,648 @@
+/* Reset default margins and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set default font and background color for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Main container styling with white background and shadow */
+.container {
+  background-color: white;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Base flexbox display utility */
+.flex {
+  display: flex;
+}
+
+/* Set flex direction to column */
+.flex-col {
+  flex-direction: column;
+}
+
+/* Set flex direction to row */
+.flex-row {
+  flex-direction: row;
+}
+
+/* Center flex items horizontally */
+.justify-center {
+  justify-content: center;
+}
+
+/* Space flex items evenly with space between */
+.justify-between {
+  justify-content: space-between;
+}
+
+/* Distribute flex items with space around them */
+.justify-around {
+  justify-content: space-around;
+}
+
+/* Center flex items vertically */
+.items-center {
+  align-items: center;
+}
+
+/* Small gap between flex items */
+.gap-2 {
+  gap: 8px;
+}
+
+/* Medium gap between flex items */
+.gap-3 {
+  gap: 12px;
+}
+
+/* Large gap between flex items */
+.gap-4 {
+  gap: 16px;
+}
+
+/* Extra large gap between flex items */
+.gap-8 {
+  gap: 32px;
+}
+
+/* Navigation bar styling with space between items */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* Time display styling in the navigation */
+.time {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Status icons container styling */
+.status-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4b5563;
+  font-size: 16px;
+}
+
+/* Full-width responsive images */
+.img-full {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Base button styling with transitions */
+.btn {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+/* Primary button styling with green background */
+.btn-primary {
+  background-color: #166534;
+  color: #f0fdf4;
+}
+
+/* Primary button hover effect with darker color */
+.btn-primary:hover {
+  background-color: #14532d;
+  transform: translateY(-1px);
+}
+
+/* Full-width button styling */
+.btn-full {
+  width: 100%;
+}
+
+/* Google login button styling with border */
+.btn-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background-color: white;
+  color: #374151;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+/* Google button hover effect with background change */
+.btn-google:hover {
+  background-color: #f9fafb;
+  transform: translateY(-1px);
+}
+
+/* Form group container styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+/* Form label styling with spacing */
+.form-label {
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+/* Form input styling with borders and focus states */
+.form-input {
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px 32px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+/* Form input focus state with green border */
+.form-input:focus {
+  border-color: #166534;
+}
+
+/* Password input wrapper with icon positioning */
+.password-wrapper {
+  position: relative;
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px 32px;
+  width: 100%;
+  transition: border-color 0.2s ease;
+}
+
+/* Password wrapper focus state for visual feedback */
+.password-wrapper:focus-within {
+  border-color: #166534;
+}
+
+/* Password input field without borders */
+.password-input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+/* Password visibility toggle icon styling */
+.password-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+/* Password icon hover effect for interactivity */
+.password-icon:hover {
+  color: #4b5563;
+}
+
+/* Tab navigation container styling */
+.tabs {
+  display: flex;
+  gap: 32px;
+  justify-content: space-around;
+  margin-top: 16px;
+}
+
+/* Individual tab styling with transitions */
+.tab {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  transition: color 0.2s ease;
+}
+
+/* Active tab styling with green color */
+.tab-active {
+  color: #166534;
+  position: relative;
+}
+
+/* Active tab underline indicator */
+.tab-underline {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 112px;
+  border-bottom: 4px solid #166534;
+}
+
+/* Inactive tab styling with gray color */
+.tab-inactive {
+  color: #9ca3af;
+}
+
+/* Inactive tab hover effect for better UX */
+.tab-inactive:hover {
+  color: #6b7280;
+}
+
+/* Base link styling without underline */
+.link {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Primary link styling with blue color */
+.link-primary {
+  color: #1e40af;
+}
+
+/* Primary link hover effect with underline */
+.link-primary:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* Center text alignment utility */
+.text-center {
+  text-align: center;
+}
+
+/* Small text size utility */
+.text-sm {
+  font-size: 14px;
+}
+
+/* Gray text color utility */
+.text-gray {
+  color: #6b7280;
+}
+
+/* Error text color utility */
+.text-error {
+  color: #ef4444;
+}
+
+/* Small top margin utility */
+.mt-2 {
+  margin-top: 8px;
+}
+
+/* Medium top margin utility */
+.mt-3 {
+  margin-top: 12px;
+}
+
+/* Large top margin utility */
+.mt-4 {
+  margin-top: 16px;
+}
+
+/* Extra large top margin utility */
+.mt-9 {
+  margin-top: 36px;
+}
+
+/* Small bottom margin utility */
+.mb-1 {
+  margin-bottom: 4px;
+}
+
+/* Large bottom margin utility */
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+/* Vertical margin utility for spacing */
+.my-5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Full width utility */
+.w-full {
+  width: 100%;
+}
+
+/* Flex item growth utility */
+.flex-1 {
+  flex: 1;
+}
+
+/* One-pixel height utility */
+.h-px {
+  height: 1px;
+}
+
+/* Gray background color utility */
+.bg-gray {
+  background-color: #e5e7eb;
+}
+
+/* Divider container with centered items */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+/* Divider line styling */
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background-color: #e5e7eb;
+}
+
+/* Divider text styling */
+.divider-text {
+  font-size: 16px;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+/* Back button styling with hover effects */
+.back-btn {
+  background-color: #e5e7eb;
+  width: 32px;
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+/* Back button hover effect with scale */
+.back-btn:hover {
+  background-color: #d1d5db;
+  transform: scale(1.05);
+}
+
+/* Code verification input styling */
+.code-input {
+  width: 48px;
+  height: 56px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  border: 2px solid #e5e7eb;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+/* Code input focus state with scale effect */
+.code-input:focus {
+  border-color: #166534;
+  background-color: white;
+  transform: scale(1.05);
+}
+
+/* Success icon styling with animation */
+.success-icon {
+  text-align: center;
+  background-color: #4ade80;
+  margin: 0 auto 8px;
+  padding: 16px;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: white;
+  animation: pulse 2s infinite;
+}
+
+/* Pulse animation for success icon */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Mobile responsiveness for screens up to 640px */
+@media (max-width: 640px) {
+  .container {
+    padding: 16px;
+    margin: 8px;
+  }
+  
+  .nav {
+    margin-bottom: 12px;
+  }
+  
+  .time {
+    font-size: 12px;
+  }
+  
+  .status-icons {
+    font-size: 14px;
+    gap: 6px;
+  }
+  
+  .btn {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+  
+  .btn-primary {
+    padding: 14px 16px;
+  }
+  
+  .form-input {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .password-wrapper {
+    padding: 10px 20px;
+  }
+  
+  .password-icon {
+    font-size: 18px;
+    right: 10px;
+  }
+  
+  .tabs {
+    gap: 20px;
+  }
+  
+  .tab {
+    font-size: 18px;
+  }
+  
+  .tab-underline {
+    width: 90px;
+  }
+  
+  .code-input {
+    width: 40px;
+    height: 48px;
+    font-size: 20px;
+  }
+  
+  .success-icon {
+    width: 56px;
+    height: 56px;
+    font-size: 28px;
+  }
+  
+  .gap-2 {
+    gap: 6px;
+  }
+  
+  .gap-3 {
+    gap: 10px;
+  }
+  
+  .gap-4 {
+    gap: 12px;
+  }
+  
+  .gap-8 {
+    gap: 24px;
+  }
+}
+
+/* Small mobile responsiveness for screens up to 480px */
+@media (max-width: 480px) {
+  .container {
+    padding: 12px;
+    margin: 4px;
+    border-radius: 6px;
+  }
+  
+  .time {
+    font-size: 11px;
+  }
+  
+  .status-icons {
+    font-size: 12px;
+    gap: 4px;
+  }
+  
+  .btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  
+  .btn-primary {
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+  
+  .form-input {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+  
+  .password-wrapper {
+    padding: 8px 16px;
+  }
+  
+  .password-icon {
+    font-size: 16px;
+    right: 8px;
+  }
+  
+  .tabs {
+    gap: 16px;
+  }
+  
+  .tab {
+    font-size: 16px;
+  }
+  
+  .tab-underline {
+    width: 80px;
+  }
+  
+  .code-input {
+    width: 36px;
+    height: 44px;
+    font-size: 18px;
+  }
+  
+  .success-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+  }
+  
+  .divider-text {
+    font-size: 14px;
+  }
+}
+
+/* Tablet responsiveness for screens 641px to 1024px */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .container {
+    max-width: 640px;
+    padding: 20px;
+  }
+  
+  .time {
+    font-size: 15px;
+  }
+  
+  .status-icons {
+    font-size: 17px;
+  }
+}
+
+/* Desktop responsiveness for screens 1025px and up */
+@media (min-width: 1025px) {
+  .container {
+    max-width: 1024px;
+    padding: 32px;
+  }
+  
+  .time {
+    font-size: 16px;
+  }
+  
+  .status-icons {
+    font-size: 18px;
+  }
+}
+
+/* Large desktop responsiveness for screens 1280px and up */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1536px;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="../css/register.css">
+  <!-- Basic Icons -->
+  <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+  <!-- Filled Icons -->
+  <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+  <!-- Brand Icons -->
+  <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col justify-center items-center min-h-screen px-4 py-4">
+  <div class="container">
+    <nav class="nav">
+      <h2 class="time">9:30</h2>
+      <p class="status-icons">
+        <span><i class="bx bx-signal-5"></i></span>
+        <span><i class="bx bx-wifi"></i></span>
+        <span><i class="bx bx-battery-full"></i></span>
+      </p>
+    </nav>
+    <div class="w-full">
+      <img src="../img/Farm Connect 1.png" alt="Card image" class="img-full" />
+    </div>
+    <div class="flex flex-col">
+      <div class="tabs">
+        <a href="index.html" class="back-btn">
+          <i class="bx bx-chevron-left text-2xl"></i>
+        </a>
+           <a href="login.html" class="tab tab-inactive">Log in</a>
+         <div class="relative inline-block">
+          <div class="tab-underline"></div>
+          <a href="" class="tab tab-active">
+            Sign Up
+          </a>
+        </div>
+      </div>
+      <form class="flex flex-col mt-9">
+        <div class="form-group">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="name" name="name" id="name" placeholder="Enter your name"
+            class="form-input" required>
+        </div>
+        <div class="form-group mt-2">
+          <label for="email" class="form-label">Your Email</label>
+          <div class="password-wrapper">
+            <input type="email" name="email" id="email" placeholder="Enter your email" class="password-input"
+              required>
+          </div>
+        </div>
+         <div class="form-group mt-2">
+          <label for="password" class="form-label">Create Password</label>
+          <div class="password-wrapper">
+            <input type="password" name="password" id="password" placeholder="Enter your password" class="password-input"
+              required>
+          </div>
+        </div>
+        <button class="btn btn-primary mt-3">Continue</button>
+      </form>
+      <div class="divider">
+        <span class="divider-line"></span>
+        <span class="divider-text">Or</span>
+        <span class="divider-line"></span>
+      </div>
+      <div class="flex flex-col gap-4 w-full">
+        <a href="" class="btn-google">
+          <img
+            src="../img/pngwing 2.png" alt="Google"
+            class="w-5 h-5 object-contain"
+          />
+          Login with Google
+        </a>
+        <p class="text-center text-sm text-gray">
+          Already have an account
+          <a href="login.html" class="link link-primary ml-1">LogIn</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
